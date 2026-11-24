@@ -33,7 +33,7 @@ public class CustomDataSource implements DataSource {
         try {
             Class.forName(driver);
         } catch (ClassNotFoundException e) {
-            throw new RuntimeException("PostgreSQL JDBC driver not found", e);
+            throw new RuntimeException("JDBC driver not found", e);
         }
     }
 
